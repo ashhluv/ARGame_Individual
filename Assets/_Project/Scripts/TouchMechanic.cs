@@ -70,32 +70,6 @@ public class TouchMechanic : MonoBehaviour, IPointerClickHandler, IBeginDragHand
                 _previousScrollValue = scrollValue;
             }
         }
-
-
-        // var touch0 = Touchscreen.current.touches[0];
-        // var touch1 = Touchscreen.current.touches[1];
-        //
-        // Vector2 pos0 = touch0.position.ReadValue();
-        // Vector2 pos1 = touch1.position.ReadValue();
-        //
-        // float currentDistance = Vector2.Distance(pos0, pos1);
-        //
-        // if (touch0.phase.IsPressed() && touch1.phase.IsPressed())
-        // {
-        //     if (_previousPinchDistance > 0)
-        //     {
-        //         float distanceDelta = currentDistance - _previousPinchDistance;
-        //
-        //         Debug.Log($"Pinch detectado: distância = {currentDistance}, delta = {distanceDelta}");
-        //         ApplyZoom(distanceDelta * 0.01f);
-        //     }
-        //
-        //     _previousPinchDistance = currentDistance;
-        // }
-        // else if (touch0.phase.IsPressed() || touch1.phase.IsPressed())
-        // {
-        //     _previousPinchDistance = currentDistance;
-        // }
     }
 
     private void ApplyZoom(float increment)
